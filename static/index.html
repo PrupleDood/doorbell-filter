@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- test -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Doorbell AI</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="../static/styles.css" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+    </head>
+    <body>
+        
+        <!-- <div class="fixed-element">
+          <button class="night-toggle-button" onclick="toggleDark()">Toggle dark mode</button>
+        </div> -->
+        <!-- Cursor -->
+        <div class="cursor"></div>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5" style="background: black">
+                <a class="navbar-brand" href="../static/index.html">Doorbell Filter AI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <button id="darkButton" class="night-toggle-button" onclick="toggleDark()">Light Mode</button>
+                <div class="collapse navbar-collapse navcontainer" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../static/demo.html">Static Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../static/index2.html">Live Demo</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../static/logs.html">Logs</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="../static/about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../static/stats.html">Awareness</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../static/mission.html">Our Mission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../static/theteam.html">Team</a></li>
+                        
+                    </ul>
+                  
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div id="MyElement" class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">Doorbell Filter</h1>
+                        <p class="fs-4">Doorbell Filter AI is a machine learning model that is designed to distinguish residents, packages, and unknown people. It is trained on over 8,000 images to recognize humans, packages, and faces. This ensures you are not alerted for small movements which could take away from the important notifications like breakins or package theft.</p>
+                        <a class="btn btn-primary btn-lg" href="../static/index2.html">Try our Demo</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <!-- Page Features-->
+                <div class="row gx-lg-5">
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-percent"></i></div>
+                                <h2 class="fs-4 fw-bold">Reliable and Accurate</h2>
+                                <p class="mb-0">Our model performs at 84% accuracy in testing, demonstrating its high performance and ability to be a tool improve upon home security systems</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div id="problem" class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cash"></i></div>
+                                <h2 class="fs-4 fw-bold">Free to Use</h2>
+                                <p class="mb-0">Our product is completely free to use, providing everyone security for their homes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-hammer"></i></div>
+                                <h2 class="fs-4 fw-bold">A Tool, Not a Replacement</h2>
+                                <p class="mb-0">Despite the high accuracy of our model, our model is built to be an addition, not a reliance, to home security and a to be a helpful eye for detecting packages.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
+                                <h2 class="fs-4 fw-bold">Unique classes to doorbell filter</h2>
+                                <p class="mb-0">This model is able to classify anyone of the homeowners, packages, and strangers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
+                                <h2 class="fs-4 fw-bold">ViT</h2>
+                                <p class="mb-0">AI utilizes a Convolutional Neural Network model for its training and testing, using Roboflow.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-stopwatch"></i></div>
+                                <h2 class="fs-4 fw-bold">Easy to Use</h2>
+                                <p class="mb-0">Simply record a short video with you in different angles, and the model is ready to be used</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
+            <!--img src="pictures/realtimelive.png" 
+          src="Error.src"onerror="this.style.display='none" style="height:90%; width:90%;object-fit: contain; margin: 10px;"-->
+          </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-body-background">
+            <div class="bg-light" style="border-width:0px"><p class="m-0 text-center">Copyright &copy; Bouncy Baguettes 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../static/scripts.js"></script>
+    </body>
+</html>
